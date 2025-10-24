@@ -195,7 +195,7 @@ main {
 
 .site-footer .footer-address { 
   color: rgba(233,230,226,0.85); 
-  margin: 0; 
+  margin: 10px; 
   line-height: 1.5; 
 }
 

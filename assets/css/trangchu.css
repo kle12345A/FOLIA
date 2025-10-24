@@ -1,3 +1,6 @@
+/* Import beautiful fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap');
+
 /* ========== HOME-INTRO (Scoped to Trangchu) ========== */
 .home-intro {
   background: #fbfbf9;
@@ -11,12 +14,15 @@
   font-size: 2.1rem;
   margin: 0 0 .5rem;
   line-height: 1.05;
+  padding-left: 40%;
 }
 
 .home-intro__subtitle {
   color: #8aa98a;
   margin: 0;
   font-size: .95rem;
+    padding-left: 40%;
+
 }
 
 /* image card */
@@ -451,8 +457,8 @@
 }
 
 .material-story__img {
-  width: 100%;
-  height: 280px;
+  width: 320px;
+  height: 320px;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 1.5rem;
@@ -483,15 +489,19 @@
 
 .material-story__title {
   color: #2f6f44;
-  font-size: 4.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 4.2rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 0.9;
   margin-bottom: 0;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
   text-align: left;
   position: relative;
   z-index: 1;
   padding-right: 180px;
+  font-style: italic;
+  margin-left: -15px;
+  padding-top: 29px;
 }
 
 .material-story__illustration {
@@ -525,7 +535,7 @@
     right: auto;
   }
   .material-story__img {
-    height: 220px;
+    height: 260px;
   }
 }
 
