@@ -1,0 +1,140 @@
+/* ========== BODY & MAIN LAYOUT ========== */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: 300px;
+}
+
+/* ========== HEADER STYLES ========== */
+.site-header {
+  background: #fff8f7;
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.navbar-brand img { 
+  height: 48px; 
+}
+
+.navbar-nav .nav-link {
+  color: #111;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+}
+
+/* Active: gạch chân màu nâu */
+.navbar-nav .nav-link.active {
+  color: #7a4b12;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 48%;
+  max-width: 120px;
+  height: 3px;
+  background: #7a4b12;
+  border-radius: 2px;
+}
+
+/* Make nav items flex and add gap for small screens */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Desktop: center navbar and spread items evenly */
+@media (min-width: 992px) {
+  .navbar-collapse { 
+    justify-content: center; 
+  }
+
+  .navbar-nav {
+    width: 56%;
+    max-width: 820px;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+/* ========== FOOTER STYLES ========== */
+.site-footer {
+  background: #1f1b18;
+  color: #e9e6e2;
+  font-size: 14px;
+}
+
+.site-footer .footer-logo { 
+  height: 56px; 
+}
+
+.site-footer .footer-address { 
+  color: rgba(233,230,226,0.85); 
+  margin: 0; 
+  line-height: 1.5; 
+}
+
+.site-footer .footer-title { 
+  color: #fff; 
+  font-weight: 600; 
+  margin-bottom: .75rem; 
+}
+
+/* footer - links */
+.site-footer a { 
+  color: rgba(233,230,226,0.9); 
+  text-decoration: none; 
+}
+
+.site-footer a:hover { 
+  color: #b78940; 
+}
+
+/* footer - social */
+.site-footer .footer-social .social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 50%;
+  color: #fff;
+  margin-right: .5rem;
+}
+
+.site-footer .footer-social .social svg { 
+  display: block; 
+}
+
+/* footer - layout */
+.footer-sep {
+  border-color: rgba(183,137,64,0.25);
+  margin: 1.75rem 0;
+  opacity: .6;
+}
+
+.footer-bottom .copyright { 
+  color: #b78940; 
+  font-weight: 600; 
+}
+
+/* footer - responsive tweaks */
+@media (max-width: 767.98px) {
+  .site-footer { 
+    font-size: 13px; 
+  }
+  .footer-bottom { 
+    flex-direction: column; 
+    gap: .5rem; 
+    align-items: flex-start; 
+  }
+}
+
