@@ -30,6 +30,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.home-intro__img-wrap:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(22,22,20,0.15);
 }
 
 .home-intro__img {
@@ -37,6 +43,11 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.6s ease;
+}
+
+.home-intro__img-wrap:hover .home-intro__img {
+  transform: scale(1.05);
 }
 
 /* description */
@@ -91,6 +102,7 @@
   overflow: hidden;
   margin-bottom: 0;
   width: 100%;
+  animation: fadeIn 1s ease-out;
 }
 
 /* Full-width background */
@@ -110,6 +122,7 @@
   display: flex;
   align-items: center;
   pointer-events: none;
+  animation: fadeInUp 1.2s ease-out 0.3s both;
 }
 
 .hero-home__content .container,
@@ -490,6 +503,7 @@
   height: auto;
   display: block;
   z-index: 0;
+  animation: float 6s ease-in-out infinite;
 }
 
 @media (max-width: 991.98px) {

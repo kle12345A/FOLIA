@@ -1,2 +1,340 @@
-/* ========== BLOG PAGE SPECIFIC STYLES ========== */
-/* Thêm CSS riêng cho trang Blog tại đây nếu cần */
+/* ========== BLOG PAGE STYLES ========== */
+
+/* ========== BLOG INTRO ========== */
+.blog-intro {
+  background: #e8f0e5;
+}
+
+.blog-intro__box {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.blog-intro__title {
+  color: #2f6f44;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.blog-intro__text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.blog-intro__btn {
+  display: inline-block;
+  padding: 0.75rem 3rem;
+  background: #2f6f44;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.blog-intro__btn:hover {
+  background: #1f4f2f;
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .blog-intro__title {
+    font-size: 1.4rem;
+  }
+  .blog-intro__text {
+    font-size: 0.9rem;
+  }
+}
+
+/* ========== BLOG POSTS ========== */
+.blog-posts {
+  background: #fff;
+}
+
+.blog-posts__header {
+  text-align: left;
+}
+
+.blog-posts__subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.blog-posts__title {
+  color: #2f6f44;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.blog-posts__desc {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+/* Blog Post Card */
+.blog-post-card {
+  background: #e8f0e5;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-post-card__img-wrap {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.blog-post-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-post-card:hover .blog-post-card__img {
+  transform: scale(1.05);
+}
+
+.blog-post-card__content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post-card__title {
+  color: #2f6f44;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.blog-post-card__excerpt {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.blog-post-card__link {
+  color: #2f6f44;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.blog-post-card__link:hover {
+  color: #1f4f2f;
+  text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+  .blog-posts__title {
+    font-size: 1.6rem;
+  }
+  .blog-post-card__img-wrap {
+    height: 180px;
+  }
+}
+
+/* ========== FAQ SECTION ========== */
+.faq-section {
+  background: #f9f9f9;
+}
+
+.faq-section__header {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-section__title {
+  color: #2f6f44;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.faq-section__desc {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Custom Accordion Styles */
+.faq-item {
+  background: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.faq-item .accordion-header {
+  margin: 0;
+}
+
+.faq-question {
+  background: #fff !important;
+  background-image: none !important;
+  color: #7a4b12;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1.25rem 3rem 1.25rem 1.5rem !important;
+  border: none;
+  width: 100%;
+  text-align: left;
+  transition: background 0.3s ease, color 0.3s ease;
+  position: relative;
+  line-height: 1.5;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+/* Ẩn hoàn toàn mũi tên mặc định của Bootstrap */
+.accordion-button::after {
+  display: none !important;
+  content: none !important;
+  background-image: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  flex-shrink: 0 !important;
+  margin-left: 0 !important;
+}
+
+.faq-question::before {
+  display: none !important;
+  content: none !important;
+  background-image: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.faq-item .accordion-button {
+  background-image: none !important;
+}
+
+.faq-item .accordion-button:not(.collapsed) {
+  background-image: none !important;
+}
+
+.faq-item .accordion-button::after {
+  background-image: none !important;
+}
+
+.faq-question:not(.collapsed) {
+  background: #fff !important;
+  color: #2f6f44;
+  box-shadow: none;
+}
+
+.faq-question:hover {
+  background: #f5f5f5 !important;
+}
+
+/* Icon custom bên phải - override Bootstrap */
+.faq-item .accordion-button.faq-question::after {
+  content: '›' !important;
+  display: block !important;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg) !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+  color: inherit;
+  background-image: none !important;
+  width: auto !important;
+  height: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  flex-shrink: 0 !important;
+  margin-left: 0 !important;
+}
+
+.faq-item .accordion-button.faq-question:not(.collapsed)::after {
+  transform: translateY(-50%) rotate(-90deg) !important;
+}
+
+.faq-question:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.faq-answer {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding: 1rem 1.5rem 1.5rem;
+  background: #fff;
+}
+
+/* Remove default Bootstrap accordion styles */
+.faq-item .accordion-button:focus {
+  box-shadow: none;
+}
+
+.faq-item .accordion-collapse {
+  border: none;
+}
+
+@media (max-width: 991.98px) {
+  .faq-section__title {
+    font-size: 1.5rem;
+  }
+  .faq-question {
+    font-size: 0.95rem;
+    padding: 1rem 2.5rem 1rem 1.25rem !important;
+    min-height: 65px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .faq-section__title {
+    font-size: 1.3rem;
+  }
+  .faq-section__desc {
+    font-size: 0.9rem;
+  }
+  .faq-question {
+    font-size: 0.9rem;
+    padding: 1rem 2.5rem 1rem 1rem !important;
+    min-height: 60px;
+  }
+  .faq-answer {
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem 1rem;
+  }
+}

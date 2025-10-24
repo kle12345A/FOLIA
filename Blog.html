@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Trang chủ</title>
+  <title>Blog</title>
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -43,10 +43,184 @@
     </nav>
   </header>
 
-  <!-- Nội dung trang -->
-  <main class="container py-5">
-    <!-- ...existing content... -->
-  </main>
+  <!-- Intro Section -->
+  <section class="blog-intro py-5 scroll-animate">
+    <div class="container">
+      <div class="blog-intro__box">
+        <h2 class="blog-intro__title">Nông sản Việt – Xanh cho môi trường, lành cho cuộc sống</h2>
+        <p class="blog-intro__text">
+          Tại Folia, chúng tôi biến những nguyên liệu nông sản Việt như sợi chuối, sợi lục bình, sợi
+          đũa... thành các sản phẩm bền vững, thân thiện với môi trường và an toàn cho sức khỏe.
+          Mỗi sản phẩm không chỉ mang giá trị sử dụng, mà còn góp phần lan tỏa lối sống xanh, bảo
+          vệ thiên nhiên và xây dựng một tương lai bền vững cho thế hệ của chúng ta.
+          Hãy cùng FOLIA chung tay bảo vệ môi trường!!
+        </p>
+        <a href="#" class="blog-intro__btn">CHI TIẾT</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Posts Section -->
+  <section class="blog-posts py-5 scroll-animate">
+    <div class="container">
+      <div class="blog-posts__header mb-4 scroll-animate animate-delay-1">
+        <p class="blog-posts__subtitle">Blogs</p>
+        <h2 class="blog-posts__title">Bài Viết Mới Nhất</h2>
+        <p class="blog-posts__desc">Khám phá những ý tưởng mới, giải pháp xanh và hành trình sáng tạo từ thiên nhiên cùng FOLIA.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Blog 1 -->
+        <div class="col-lg-4 col-md-6 scroll-animate animate-delay-1">
+          <div class="blog-post-card">
+            <div class="blog-post-card__img-wrap">
+              <img src="assets/img/blog/bl1.png" alt="Quy trình xử lý sợi lục bình" class="blog-post-card__img">
+            </div>
+            <div class="blog-post-card__content">
+              <h3 class="blog-post-card__title">Quy trình xử lý sợi lục bình</h3>
+              <p class="blog-post-card__excerpt">Quy trình xử lý sợi lục bình gồm các bước: thu hoạch, sơ chế...</p>
+              <a href="#" class="blog-post-card__link">Tìm hiểu thêm</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="col-lg-4 col-md-6 scroll-animate animate-delay-2">
+          <div class="blog-post-card">
+            <div class="blog-post-card__img-wrap">
+              <img src="assets/img/blog/bl2.png" alt="Quy trình xử lý sợi chuối" class="blog-post-card__img">
+            </div>
+            <div class="blog-post-card__content">
+              <h3 class="blog-post-card__title">Quy trình xử lý sợi chuối</h3>
+              <p class="blog-post-card__excerpt">Quy trình xử lý sợi chuối gồm các bước chính: thu hoạch thân chuối, tách sợi...</p>
+              <a href="#" class="blog-post-card__link">Tìm hiểu thêm →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="col-lg-4 col-md-6 scroll-animate animate-delay-3">
+          <div class="blog-post-card">
+            <div class="blog-post-card__img-wrap">
+              <img src="assets/img/blog/bl3.png" alt="Quy trình xử lý sợi cỏ bàng" class="blog-post-card__img">
+            </div>
+            <div class="blog-post-card__content">
+              <h3 class="blog-post-card__title">Quy trình xử lý sợi cỏ bàng</h3>
+              <p class="blog-post-card__excerpt">Quy trình xử lý sợi cỏ bàng gồm thu hoạch và sơ lý nguyên liệu...</p>
+              <a href="#" class="blog-post-card__link">Tìm hiểu thêm →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section py-5 scroll-animate">
+    <div class="container">
+      <div class="faq-section__header text-center mb-5 scroll-animate animate-delay-1">
+        <h2 class="faq-section__title">MỘT SỐ CÂU HỎI THƯỜNG GẶP</h2>
+        <p class="faq-section__desc">Chúng tôi hiểu rằng bạn có thể muốn biết rõ hơn về sản phẩm và hành trình xanh của FOLIA. Dưới đây là những câu hỏi được quan tâm nhiều nhất – cùng lời giải đáp ngắn gọn, dễ hiểu để bạn yên tâm lựa chọn.</p>
+      </div>
+
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-lg-6 mb-4">
+          <div class="accordion" id="faqLeft">
+            <!-- FAQ 1 -->
+            <div class="accordion-item faq-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Sản phẩm của FOLIA được làm từ những loại sợi tự nhiên nào?
+                </button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                <div class="accordion-body faq-answer">
+                  Sản phẩm của FOLIA chủ yếu được tạo nên từ các loại sợi tự nhiên như sợi lục bình, sợi chuối, sợi lục bình và sợi cỏ bàng. Đây đều là những nguyên liệu tái tạo từ nông sản Việt, vừa bền chắc, vừa thân thiện với môi trường và an toàn cho sức khỏe.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item faq-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Sản phẩm của FOLIA có bền và an toàn cho sức khỏe không?
+                </button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                <div class="accordion-body faq-answer">
+                  Hoàn toàn an toàn! Tất cả sản phẩm của FOLIA đều được sản xuất từ nguyên liệu thiên nhiên, không chứa hóa chất độc hại. Chúng tôi cam kết mang đến cho bạn những sản phẩm chất lượng, bền đẹp và thân thiện với sức khỏe.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item faq-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Quy trình sản xuất sợi tự nhiên của FOLIA có gì đặc biệt?
+                </button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                <div class="accordion-body faq-answer">
+                  Quy trình của chúng tôi bắt đầu từ việc thu hoạch nguyên liệu từ các nông trại tại Việt Nam, sau đó trải qua các bước sơ chế, xử lý và dệt thủ công tỉ mỉ. Mỗi sản phẩm đều mang dấu ấn của người nghệ nhân, kết hợp giữa truyền thống và sáng tạo hiện đại.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-lg-6 mb-4">
+          <div class="accordion" id="faqRight">
+            <!-- FAQ 4 -->
+            <div class="accordion-item faq-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  Thời gian sử dụng trung bình của sản phẩm FOLIA là bao lâu?
+                </button>
+              </h3>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                <div class="accordion-body faq-answer">
+                  Tuỳ vào cách sử dụng và bảo quản, sản phẩm của FOLIA có thể sử dụng trong nhiều năm. Với chất liệu tự nhiên bền vững, sản phẩm vẫn giữ được độ đẹp và chất lượng theo thời gian.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item faq-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                  FOLIA có nhận thiết kế sản phẩm theo yêu cầu riêng không?
+                </button>
+              </h3>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                <div class="accordion-body faq-answer">
+                  Có! Chúng tôi rất vui khi được hỗ trợ bạn thiết kế sản phẩm theo ý tưởng riêng. Hãy liên hệ với đội ngũ của FOLIA để được tư vấn chi tiết về kích thước, màu sắc và kiểu dáng phù hợp nhất.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="accordion-item faq-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                  Sản phẩm từ sợi tự nhiên khác gì so với sản phẩm từ nhựa hoặc sợi tổng hợp?
+                </button>
+              </h3>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                <div class="accordion-body faq-answer">
+                  Sản phẩm từ sợi tự nhiên thân thiện với môi trường hơn, có thể phân hủy sinh học và không gây ô nhiễm. So với nhựa hay sợi tổng hợp, chúng an toàn hơn cho sức khỏe và góp phần bảo vệ hành tinh xanh.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 <!-- Footer -->
   <footer class="site-footer">
     <div class="container py-5">
@@ -109,5 +283,8 @@
   </footer>
   <!-- Bootstrap 5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom Animations -->
+  <script src="assets/js/animations.js"></script>
 </body>
 </html>
