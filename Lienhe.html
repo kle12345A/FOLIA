@@ -13,6 +13,9 @@
   
   <!-- liên kết tới file CSS riêng -->
   <link href="assets/css/lienhe.css" rel="stylesheet">
+  
+  <!-- Chat CSS -->
+  <link href="assets/css/chat.css" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
@@ -130,22 +133,22 @@
           <div class="contact-form-box">
             <h2 class="contact-form-box__title">Đăng ký để nhận thông tin khuyến mãi sớm nhất từ Folia</h2>
             
-            <form class="contact-form">
+            <form class="contact-form" id="contactForm">
               <div class="mb-2">
-                <input type="text" class="form-control contact-form__input" placeholder="Tên" required>
+                <input type="text" class="form-control contact-form__input" name="user_name" placeholder="Tên" required>
               </div>
               
               <div class="mb-2">
-                <input type="email" class="form-control contact-form__input" placeholder="Email" required>
+                <input type="email" class="form-control contact-form__input" name="user_email" placeholder="Email" required>
               </div>
               
               <div class="mb-2">
-                <input type="tel" class="form-control contact-form__input" placeholder="Số điện thoại" required>
+                <input type="tel" class="form-control contact-form__input" name="user_phone" placeholder="Số điện thoại" required>
               </div>
               
               <div class="mb-2">
-                <select class="form-select contact-form__input">
-                  <option selected>Địa chỉ</option>
+                <select class="form-select contact-form__input" name="user_location">
+                  <option value="" selected>Địa chỉ</option>
                   <option value="hanoi">Hà Nội</option>
                   <option value="hcm">TP. Hồ Chí Minh</option>
                   <option value="danang">Đà Nẵng</option>
@@ -154,10 +157,28 @@
               </div>
               
               <div class="mb-3">
-                <textarea class="form-control contact-form__textarea" rows="4" placeholder="Chi chú"></textarea>
+                <textarea class="form-control contact-form__textarea" name="user_message" rows="4" placeholder="Chi chú"></textarea>
               </div>
               
-              <button type="submit" class="contact-form__btn">Send Message</button>
+              <button type="submit" class="contact-form__btn" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loading" style="display: none;">
+                  <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                  Đang gửi...
+                </span>
+              </button>
+              
+              <!-- Success/Error Messages -->
+              <div id="form-messages" class="mt-3" style="display: none;">
+                <div id="success-message" class="alert alert-success" style="display: none;">
+                  <i class="fas fa-check-circle me-2"></i>
+                  <strong>Thành công!</strong> Tin nhắn của bạn đã được gửi. Chúng tôi sẽ liên hệ lại sớm nhất!
+                </div>
+                <div id="error-message" class="alert alert-danger" style="display: none;">
+                  <i class="fas fa-exclamation-circle me-2"></i>
+                  <strong>Lỗi!</strong> Có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại sau.
+                </div>
+              </div>
             </form>
           </div>
         </div>
@@ -229,5 +250,14 @@
   
   <!-- Custom Animations -->
   <script src="assets/js/animations.js"></script>
+  
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <!-- Chat Script -->
+  <script src="assets/js/chat.js"></script>
+  
+  <!-- Contact Form Script -->
+  <script src="assets/js/contact-form.js"></script>
 </body>
 </html>
