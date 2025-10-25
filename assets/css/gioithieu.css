@@ -89,6 +89,152 @@
   background: #f9f9f9;
 }
 
+/* ========== MISSION CONTAINER ========== */
+.mission-container {
+  background: #e8f0e5;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mission-container__img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.mission-container__content {
+  padding: 2.5rem;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mission-container__title {
+  color: #2f6f44;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.mission-container__text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin: 0;
+}
+
+@media (max-width: 991.98px) {
+  .mission-container__content {
+    padding: 2rem 1.5rem;
+    height: auto;
+  }
+  .mission-container__img {
+    height: auto;
+    max-height: 350px;
+  }
+  .mission-container__title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .mission-container__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mission-container__content {
+    padding: 1.5rem 1.25rem;
+    height: auto;
+  }
+  .mission-container__img {
+    height: auto;
+    max-height: 280px;
+  }
+  .mission-container__title {
+    font-size: 1.2rem;
+  }
+  .mission-container__text {
+    font-size: 0.9rem;
+  }
+}
+
+/* ========== VISION CONTAINER ========== */
+.vision-container {
+  background: #e8f0e5;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.vision-container__img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.vision-container__content {
+  padding: 2.5rem;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vision-container__title {
+  color: #2f6f44;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.vision-container__text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin: 0;
+}
+
+@media (max-width: 991.98px) {
+  .vision-container__content {
+    padding: 2rem 1.5rem;
+    height: auto;
+  }
+  .vision-container__img {
+    height: auto;
+    max-height: 350px;
+  }
+  .vision-container__title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .vision-container__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .vision-container__content {
+    padding: 1.5rem 1.25rem;
+    height: auto;
+  }
+  .vision-container__img {
+    height: auto;
+    max-height: 280px;
+  }
+  .vision-container__title {
+    font-size: 1.2rem;
+  }
+  .vision-container__text {
+    font-size: 0.9rem;
+  }
+}
+
 .mission-vision .row {
   align-items: center;
 }
