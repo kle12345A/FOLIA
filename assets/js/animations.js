@@ -103,9 +103,11 @@
 
   // Khởi tạo tất cả animations khi DOM ready
   function init() {
-    // Chỉ chạy trên desktop để tránh lag mobile
+    // Luôn chạy scroll animations để đảm bảo elements hiển thị
+    initScrollAnimations();
+    
+    // Chỉ chạy parallax trên desktop để tránh lag mobile
     if (window.innerWidth > 768) {
-      initScrollAnimations();
       initParallax();
     }
     
@@ -121,13 +123,17 @@
     init();
   }
 
-  // Re-init khi resize (chỉ cho desktop)
+  // Re-init khi resize
   let resizeTimeout;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
+      // Luôn re-init scroll animations
+      initScrollAnimations();
+      
+      // Chỉ re-init parallax trên desktop
       if (window.innerWidth > 768) {
-        initScrollAnimations();
+        initParallax();
       }
     }, 250);
   });
