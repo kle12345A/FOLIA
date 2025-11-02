@@ -31,9 +31,9 @@ class FloatingContact {
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="Facebook" />
       </a>
 
-      <!-- Zalo -->
-      <a href="https://zalo.me/your-zalo-oa" target="_blank" class="contact-btn zalo" data-tooltip="Chat Zalo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq9M6V08Mvxd3OORurB4xNIKudVqwzq0taGQ&s" alt="Zalo" />
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@foliaoriginalvietnam" target="_blank" class="contact-btn tiktok" data-tooltip="TikTok">
+        <img src="assets/img/png-transparent-tiktok-tiktok-logo-tiktok-icon-thumbnail.png" alt="TikTok" />
       </a>
 
       <!-- ChatGPT -->
@@ -279,7 +279,7 @@ class FloatingContact {
     }
     
     if (lowerMessage.includes('đặt hàng') || lowerMessage.includes('mua')) {
-      return 'Bạn có thể đặt hàng qua Facebook, Zalo hoặc gọi trực tiếp số 0343793211. Chúng tôi hỗ trợ giao hàng toàn quốc.';
+      return 'Bạn có thể đặt hàng qua Facebook, TikTok hoặc gọi trực tiếp số 0343793211. Chúng tôi hỗ trợ giao hàng toàn quốc.';
     }
     
     if (lowerMessage.includes('liên hệ') || lowerMessage.includes('contact')) {

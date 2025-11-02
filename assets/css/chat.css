@@ -70,13 +70,51 @@
   opacity: 1;
 }
 
-/* Zalo Button */
-.contact-btn.zalo {
-  background: linear-gradient(135deg, #0068ff 0%, #4dabf7 50%, #1976d2 100%);
+/* TikTok Button */
+.contact-btn.tiktok {
+  background: linear-gradient(135deg, #000000 0%, #333333 50%, #000000 100%);
   position: relative;
 }
 
-.contact-btn.zalo::before {
+.contact-btn.tiktok .tiktok-logo {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-btn.tiktok .tiktok-svg {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Lớp màu đỏ - lệch sang phải và lên trên */
+.contact-btn.tiktok .tiktok-red {
+  transform: translate(calc(-50% + 0.8px), calc(-50% - 0.8px));
+  mix-blend-mode: screen;
+  opacity: 0.9;
+}
+
+/* Lớp màu trắng - ở giữa */
+.contact-btn.tiktok .tiktok-white {
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Lớp màu xanh ngọc - lệch sang trái và xuống dưới */
+.contact-btn.tiktok .tiktok-cyan {
+  transform: translate(calc(-50% - 0.8px), calc(-50% + 0.8px));
+  mix-blend-mode: screen;
+  opacity: 0.9;
+}
+
+.contact-btn.tiktok::before {
   content: '';
   position: absolute;
   top: 0;
@@ -89,7 +127,11 @@
   transition: opacity 0.3s ease;
 }
 
-.contact-btn.zalo:hover::before {
+.contact-btn.tiktok:hover {
+  background: linear-gradient(135deg, #333333 0%, #000000 50%, #333333 100%);
+}
+
+.contact-btn.tiktok:hover::before {
   opacity: 1;
 }
 
@@ -571,7 +613,7 @@
   animation: float 4s ease-in-out infinite;
 }
 
-.contact-btn.zalo {
+.contact-btn.tiktok {
   animation-delay: 0.8s;
 }
 
