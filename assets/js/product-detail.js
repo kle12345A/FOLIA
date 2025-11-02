@@ -26,6 +26,8 @@
       price: '699,000₫',
       img: 'assets/img/sanpham/sp3.png',
       desc: 'Thiết kế xòe dịu dàng như cánh hoa với phần miệng túi mở rộng – thu hẹp linh hoạt, giữ form tốt khi mang theo nhiều đồ. Toàn bộ thân túi được dệt thủ công bởi các nghệ nhân làng nghề, mỗi đường đan đều đặn giúp túi chắc chắn và bền bỉ theo thời gian. Lý tưởng cho những buổi dạo phố, picnic hay đi biển.',
+      size: '30cm (Rộng) × 25cm (Cao) × 14cm (Sâu)',
+      material: 'Sợi chuối đan thủ công',
       category: 'tui'
     },
     'FL-05': {
@@ -109,6 +111,8 @@
       price: '699,000₫',
       img: 'assets/img/pagesanpham/sphamsoichuoi/sp7.png',
       desc: 'Thiết kế bán nguyệt đặc trưng, đeo chéo hay cầm tay đều hợp. Điểm nhấn thủ công tạo nét riêng khó trộn lẫn.',
+      size: '32cm (Rộng) × 20cm (Cao) × 10cm (Sâu)',
+      material: 'Sợi chuối đan thủ công',
       category: 'tui'
     },
     'FL-06': {
